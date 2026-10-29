@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toysu — Share Your Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">🧸</span>
+        <span class="logo-text">Toysu</span>
+      </div>
+      <nav class="nav">
+        <a href="#why">Why Toysu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#leave-review" class="nav-cta">Leave a Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Toys kids love.<br />Reviews parents trust.</h1>
+        <p>
+          Toysu makes safe, joyful, and durable toys for every age. Loved the
+          set you bought? Tell us about it — your review goes straight to our
+          WhatsApp, where a real Toysu team member reads every message.
+        </p>
+        <div class="hero-actions">
+          <a href="#leave-review" class="btn btn-primary">Leave a Review</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item"><strong>4.9/5</strong><span>Average rating</span></div>
+          <div class="trust-item"><strong>50k+</strong><span>Happy families</span></div>
+          <div class="trust-item"><strong>100%</strong><span>Safety tested</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="ball">🏀</div>
+        <div class="block">🧱</div>
+        <div class="rocket">🚀</div>
+        <div class="puzzle">🧩</div>
+        <div class="car">🚗</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>🧸 ✨ 🎈 🧩 🎨 🚗 🚀 🎪 🪀 🎁 🧸 ✨ 🎈 🧩 🎨 🚗 🚀 🎪 🪀 🎁</span>
+      <span>🧸 ✨ 🎈 🧩 🎨 🚗 🚀 🎪 🪀 🎁 🧸 ✨ 🎈 🧩 🎨 🚗 🚀 🎪 🪀 🎁</span>
+    </div>
+  </div>
+
+  <section id="why" class="section">
+    <div class="container">
+      <h2 class="section-title">Why families choose Toysu</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Child-safe materials</h3>
+          <p>Non-toxic, BPA-free plastics and responsibly sourced wood in every toy.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Built to learn</h3>
+          <p>Every design encourages creativity, motor skills, and curiosity.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>We actually listen</h3>
+          <p>Reviews land directly on our WhatsApp and shape the toys we make next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section section-blue">
+    <div class="container">
+      <h2 class="section-title">What parents say</h2>
+      <div class="cards">
+        <div class="card review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The quality is top class — solid plastic, smooth edges. And the car is so fun, my son races it around the house all day!"</p>
+          <span class="reviewer">— Priya S.</span>
+        </div>
+        <div class="card review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Great quality gun set, very sturdy. What made it fun was the light and sound effects — my kid is obsessed."</p>
+          <span class="reviewer">— Rahul M.</span>
+        </div>
+        <div class="card review-card">
+          <div class="stars">★★★★☆</div>
+          <p>"Beautiful diya quality, paint hasn't faded at all. Lighting them together as a family is the fun part for us."</p>
+          <span class="reviewer">— Ananya K.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leave-review" class="section section-rainbow">
+    <div class="container review-grid">
+      <div class="review-copy">
+        <h2 class="section-title">Leave your review</h2>
+        <p>
+          Fill in the form and tap <strong>Send via WhatsApp</strong>. Your
+          review will open directly in WhatsApp addressed to
+          <strong>+91 99664 94752</strong> — just press send and you're done.
+        </p>
+        <ol class="steps">
+          <li>Rate and describe your toy</li>
+          <li>Review opens in WhatsApp</li>
+          <li>Hit send — we reply fast</li>
+        </ol>
+      </div>
+
+      <form id="reviewForm" class="review-form">
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+        </div>
+
+        <div class="form-row">
+          <label for="toy">Toy you bought</label>
+          <select id="toy" name="toy" required>
+            <option value="" disabled selected>Choose a toy…</option>
+            <option>Cars</option>
+            <option>Guns</option>
+            <option>Diyas</option>
+            <option>Dolls</option>
+            <option>Soft Toys</option>
+            <option>Bikes &amp; Scooters</option>
+            <option>Balls</option>
+            <option>Kitchen Sets</option>
+            <option>Board Games</option>
+            <option>Water Guns</option>
+            <option>Educational Toys</option>
+            <option>Puzzles</option>
+            <option>Other Toys</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <span class="label">Quality rating</span>
+          <div class="star-input" id="starInput">
+            <button type="button" data-value="1">★</button>
+            <button type="button" data-value="2">★</button>
+            <button type="button" data-value="3">★</button>
+            <button type="button" data-value="4">★</button>
+            <button type="button" data-value="5">★</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="quality">How was the quality?</label>
+          <textarea id="quality" name="quality" rows="3"
+            placeholder="Material, durability, finish — how did the toy hold up?" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="fun">What made it fun?</label>
+          <textarea id="fun" name="fun" rows="3"
+            placeholder="What did your child love most about playing with it?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp">
+          <span class="wa-icon">✆</span> Send Review on WhatsApp
+        </button>
+        <p class="form-note" id="formNote" hidden>Opening WhatsApp…</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Toysu. Made with 💛 for little hands.</span>
+      <a class="footer-wa" href="https://wa.me/919966494752" target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
